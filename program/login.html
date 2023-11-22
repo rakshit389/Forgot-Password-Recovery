@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Sign in</title>
+</head>
+<body>
+     <h2 class="text-center mt-5 mb-3 p-3" >Sign in</h2>
+     <div class="container border border-light rounded shadow" style="max-width:60vh;min-height:23vw">
+        <form  action="/authentication" method="post" class="mt-4 needs-validation">
+              <label class="h4 p-2" for="Email1">Email address</label>
+              <input type="email" name="email" class="form-control p-2" id="Email1" aria-describedby="emailHelp" placeholder="Enter email" required >
+              <br>
+              <label class="h4 p-2"  for="Password1">Password</label>
+              <input type="password" name="password" class="form-control p-2" id="Password1" placeholder="Password"  required >
+              <br>
+            <div class="d-flex flex-row justify-content-between">
+                <div>
+                    <button type="submit" class="btn btn-lg btn-success p-2">Sign in</button>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                    <a  class="h5 pt-2 pe-2 ps-2" href="http://localhost:8000/forgot">Forgot Password</a>
+                    <a  class="h5 ps-2" href="http://localhost:8000/signup">Sign up here</a>
+                </div>
+            </div>
+          </form>
+     </div>
+     <style>
+        body {
+               font-family: Georgia ;
+           }
+    </style>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
